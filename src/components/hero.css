@@ -3,6 +3,13 @@ html, body {
 	padding: 0;
   }
 
+  @font-face {
+    font-family: 'MoonTime';
+    src: url('/fonts/MoonTime-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  } 
+
 .abs-center {
 	margin: auto;
 	position: absolute;
@@ -11,6 +18,7 @@ html, body {
 	bottom: 0;
 	left: 0;
   }
+
 
 .text {
 	margin: auto;

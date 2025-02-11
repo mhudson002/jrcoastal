@@ -1,12 +1,14 @@
 ---
-const fbIcon = "facebook";
+import { Image } from "astro:assets";
+import logo from "../assets/wholeLogo-light.png";
+import logoSmall from "../assets/logo_small.avif";
 import "./navbar.css";
 ---
 
 <div class="navbar text-neutral-content">
   <div class="navbar-start">
     <div class="logo hidden lg:flex">
-      <img src="src/assets/wholeLogo-light.png" alt="">
+      <Image src={logo} alt="logo">
     </div>
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -42,7 +44,7 @@ import "./navbar.css";
     </ul>
   </div>
   <div class="logo md:hidden">
-    <img src="src/assets/logo_small.avif" alt="">
+    <Image src={logoSmall} alt="smallLogo">
   </div>
   <div class="navbar-end">
     <a href="https://www.facebook.com/jrcoastalmarketingllc">
