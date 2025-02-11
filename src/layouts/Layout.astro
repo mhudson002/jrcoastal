@@ -1,9 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
-import '@fontsource-variable/bricolage-grotesque';
+import Navbar from "@components/navbar.astro";
 
 
 
@@ -29,20 +27,22 @@ const makeTitle = title
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link href="src/styles/global.css" rel="stylesheet"/>
+    <style>
 
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+      html, body {
+
+          height: 100%;
+
+      }
+
+    </style>
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="J+R Coastal Marketing"
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
       openGraph={{
         basic: {
           url: canonicalURL,
@@ -51,7 +51,7 @@ const makeTitle = title
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "workspace",
         },
       }}
     />
@@ -60,12 +60,5 @@ const makeTitle = title
     <Navbar />
     <slot />
     <Footer />
-    <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-      img {
-        content-visibility: auto;
-      }
-    </style>
   </body>
 </html>

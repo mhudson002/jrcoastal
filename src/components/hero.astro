@@ -1,42 +1,90 @@
 ---
-import { Picture } from "astro:assets";
-import bgImg from "assets/header.jpg";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
+import "./hero.css";
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={bgImg}
-      alt="J+R Marketing"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      It's time to elevate your brand
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      As a woman- and veteran-owned business, J+R Coastal Marketing brings discipline, creativity, 
-      and collaboration to every campaign—working side by side with you to achieve remarkable 
-      results.
+<div
+  class="hero min-h-screen"
+  style="background-image: url(/src/assets/header.jpg)">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="text text-neutral-content">
+    <h2 class="rw sentence">
+      <span class="this">It's time to </span>
+      <div class="rw-words rw-words-1">
+        <span>elevate</span>
+        <span>transform</span>
+        <span>revitalize</span>  
+        <span>ignite</span>
+        <span>empower</span>
+      </div>
+    </h2>
+    <h3>your brand.</h3>
+    <p>
+      As a woman- and veteran-owned business, J+R Coastal Marketing brings
+      discipline, creativity, and collaboration to every campaign—working side
+      by side with you to achieve remarkable results.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="/contact"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-
-         Lets Grow Together
-      </Link>
-    </div>
   </div>
-</main>
+  <div class="">
+    <button class="btn btn-one" onclick="my_modal_3.showModal()">Let's Grow Together</button>
+  </div>
+</div>
+
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box flex flex-col items-center gap-2">
+    
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      <label class="form-control w-full max-w-xs">
+      <label class="input input-bordered flex items-center gap-2">
+        <input type="text" class="grow" placeholder="Name" />
+      </label>
+      <label class="input input-bordered flex items-center gap-2">
+        <input type="text" class="grow" placeholder="Email" />
+      </label>
+      <label class="input input-bordered flex items-center gap-2">
+        <input type="text" class="grow" placeholder="Phone Number" />
+      </label>
+      <label class="input input-bordered input-lg flex items-center gap-2">
+        <input type="text" class="grow" placeholder="Message" />
+      </label>
+    </label>
+  </form>
+  <button class="btn">Send</button>
+    </div>
+</dialog>
+
+  
+  <!-- <div class="container text-neutral-content">
+    <div id="top-row">
+    <p class="hl-one">It's Time To 
+      <span class="">elevate</span></p> -->
+    <!-- <div class="rw-words">
+    <span class="rw-words-1 font-normal">
+    <span>elevate</span>
+    <span>transform</span>
+    <span>revitalize</span>  
+    <span>ignite</span>
+    <span>empower</span>
+    </div> -->
+    <!-- <p class="hl-two">Your Brand</p></div> -->
+  <!-- <div class="hero-content text-neutral-content text-center">
+      <h1 class="mb-5 text-5xl font-bold text-center">
+        It's time to
+        <span class="rw-words rw-words-1 font-normal">
+          <span>elevate</span>
+          <span>transform</span>
+          <span>revitalize</span>
+          <span>ignite</span>
+          <span>empower</span>
+        </span>
+      </h1>
+      <h1 class="mb-5 text-5xl font-bold">your brand</h1>
+      <p class="mb-5 max-w-xl">
+        As a woman- and veteran-owned business, J+R Coastal Marketing brings
+        discipline, creativity, and collaboration to every campaign—working side
+        by side with you to achieve remarkable results.
+      </p>
+        <button class="btn btn-one">Let's Grow Together</button>
+      </div>
+    </div>
+  </div> -->

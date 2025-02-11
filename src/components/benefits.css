@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+    font-size: 16pt;
+  }
+  body {
+   min-height: 100vh;
+   display: grid;
+   margin: 0; 
+   padding: 0 0 2em 0;
+   background: ivory;
+  }
+  
+  .grid {
+      display: grid;
+      grid: auto / repeat(5, 1fr);
+      place-items: center;
+      gap: 1em;
+      row-gap: 1em;
+      width: 98%;
+      margin: 1em auto 0 auto;
+  }
+
+  @media screen and (max-width: 950px) {
+    .grid {grid: auto / 1fr 1fr; width: 90%;}
+  }
+  @media screen and (max-width: 700px) {
+    .grid {grid: auto / 1fr; width: 90%;}
+      .container {
+        margin: auto
+      }
+  }
+  
+  .container {
+    perspective: 1000px;
+  }
+  
+  .card {  
+      position: relative;
+      outline: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 5px 40px -10px grey;
+      transform-style: preserve-3d;
+      transition: 0.6s;
+  }
+      .container:hover .card {
+          transform: rotateY(180deg);
+      }
+  /* Stops cards flipping on small screens */
+      @media screen and (max-width: 900px) {
+      .container {
+        perspective: 1px;
+        transform: none;
+        }
+      .container .back {
+        z-index: 2;
+        opacity: 0;
+        transition-duration: 0.6s;
+        transform: none;
+      }
+      .container .card:focus,
+      .container .card:focus-within,
+      .container .card:hover {
+        transform: none;
+      }
+      .container .card:focus .back,
+      .container .card:focus-within .back,
+      .container .card:hover .back {
+        opacity: 1;
+        transform: none;
+      }
+  }
+  
+  
+  .front {
+    background: white;
+  }
+  .front img {
+    border-radius: 9px;
+  }
+  
+  .front, .back {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+  }
+  
+  .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: cornflowerblue;
+      transform: rotateY(180deg);
+  }
+  .back p {
+      text-align: center;
+      font-family: arial;
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0 25px;
+  }
+  
+  .img {
+      max-width: 100%;
+  }
+  
+  .button {
+      border: 1px solid white;
+      border-radius: 10px;
+      background: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: lighter;
+      padding: .15rem .5rem;
+      transition-duration: 0.25s;
+      cursor: pointer;
+  }
+  
+  .button:hover,
+  .button:focus {
+      background: white;
+      color: cornflowerblue;
+      box-shadow: 0 5px 20px -5px navy;
+  }
+
+  .section-title {
+    font-size: 9vmin;
+    text-align: center;
+    line-height: 1;
+    color: #333;
+  }
