@@ -27,7 +27,6 @@ html, body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	width: 800px;
 	height: 150px;
 }
 
@@ -36,6 +35,7 @@ p{
 	font-size: 20px;
 	position: relative;
 	margin-top: 150px;
+	overflow-wrap: normal;
 }
 
 h2, h3 {
@@ -49,7 +49,6 @@ h2, h3 {
   }
 
 h3 {
-	padding-left: unset;
 	padding-top: 100px;
 	text-align: center;
 }

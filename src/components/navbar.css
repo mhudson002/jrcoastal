@@ -7,11 +7,6 @@ body {
     
 }
 
-.logo img {
-    display: block;
-    cursor: pointer;
-}
-
 .menu li,
 .menu a,
 .menu button {

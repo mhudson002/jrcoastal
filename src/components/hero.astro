@@ -4,15 +4,14 @@ import header from "../assets/header.jpg"
 
 ---
 
-
-
 <div
   class="hero min-h-screen"
   style="background-image: url('/pictures/header.jpg')">
   <div class="hero-overlay bg-opacity-60"></div>
-  <div class="text text-neutral-content">
+  <div class="text text-neutral-content w-screen md:w-[800px]">
+  <div class="invisible md:visible">
     <h2 class="rw sentence">
-      <span class="this">It's time to </span>
+      <span>It's time to </span>
       <div class="rw-words rw-words-1">
         <span>elevate</span>
         <span>transform</span>
@@ -22,7 +21,21 @@ import header from "../assets/header.jpg"
       </div>
     </h2>
     <h3>your brand.</h3>
-    <p>
+  </div>
+  <div class="md:hidden">
+    <h2 class="rw sentence text-[30px]">
+      <span>It's time to </span>
+      <div class="rw-words rw-words-1 text-[5px]">
+        <span class="text-[2px]">elevate</span>
+        <span class="text-[2px]">transform</span>
+        <span class="text-[2px]">revitalize</span>  
+        <span class="text-[2px]">ignite</span>
+        <span class="text-[2px]">empower</span>
+      </div>
+    </h2>
+    <h3 class="text-[30px]">your brand.</h3>
+  </div>
+    <p class="text-pretty p-5">
       As a woman- and veteran-owned business, J+R Coastal Marketing brings
       discipline, creativity, and collaboration to every campaign—working side
       by side with you to achieve remarkable results.
@@ -56,39 +69,3 @@ import header from "../assets/header.jpg"
   <button class="btn">Send</button>
     </div>
 </dialog>
-
-  
-  <!-- <div class="container text-neutral-content">
-    <div id="top-row">
-    <p class="hl-one">It's Time To 
-      <span class="">elevate</span></p> -->
-    <!-- <div class="rw-words">
-    <span class="rw-words-1 font-normal">
-    <span>elevate</span>
-    <span>transform</span>
-    <span>revitalize</span>  
-    <span>ignite</span>
-    <span>empower</span>
-    </div> -->
-    <!-- <p class="hl-two">Your Brand</p></div> -->
-  <!-- <div class="hero-content text-neutral-content text-center">
-      <h1 class="mb-5 text-5xl font-bold text-center">
-        It's time to
-        <span class="rw-words rw-words-1 font-normal">
-          <span>elevate</span>
-          <span>transform</span>
-          <span>revitalize</span>
-          <span>ignite</span>
-          <span>empower</span>
-        </span>
-      </h1>
-      <h1 class="mb-5 text-5xl font-bold">your brand</h1>
-      <p class="mb-5 max-w-xl">
-        As a woman- and veteran-owned business, J+R Coastal Marketing brings
-        discipline, creativity, and collaboration to every campaign—working side
-        by side with you to achieve remarkable results.
-      </p>
-        <button class="btn btn-one">Let's Grow Together</button>
-      </div>
-    </div>
-  </div> -->
