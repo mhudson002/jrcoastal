@@ -27,9 +27,18 @@ const makeTitle = title
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link href="src/styles/global.css" rel="stylesheet"/>
+    <style>
+
+      html, body {
+
+          height: 100%;
+
+      }
+
+    </style>
     <SEO
       title={makeTitle}
       description="J+R Coastal Marketing"
