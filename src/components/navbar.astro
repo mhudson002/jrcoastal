@@ -1,3 +1,4 @@
+
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/wholeLogo-light.png";
@@ -9,10 +10,10 @@ import "./navbar.css";
 <div class="navbar text-neutral-content">
   <div class="navbar-start">
     <div class="logo hidden lg:flex">
-      <Image src={logo} alt="logo">
+      <a href="/"><Image src={logo} alt="logo"></a>
     </div>
     <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -44,35 +45,20 @@ import "./navbar.css";
       <li><a>Work</a></li>
     </ul>
   </div>
-  <div class="logo md:hidden">
-    <Image src={logoSmall} alt="smallLogo">
+  <div class="logo lg:hidden">
+    <a href="/"><Image src={logoSmall} alt="smallLogo"></a>
   </div>
   <div class="navbar-end">
     <a href="https://www.facebook.com/jrcoastalmarketingllc">
-    <button class="btn btn-ghost btn-circle m-2">
-      <Icon name="mdi:facebook" class="h-8 w-8"/>     
+    <button class="btn btn-ghost btn-circle">
+      <Icon name="mdi:facebook" class="h-5 w-5 m-1 md:h-8 w-8"/>     
     </button>
   </a>
   <a href="">
-    <button class="btn btn-ghost btn-circle m-2">
-      <Icon name="mdi:instagram" class="h-8 w-8"/>
+    <button class="btn btn-ghost btn-circle">
+      <Icon name="mdi:instagram" class="h-5 w-5 m-1 md:h-8 w-8"/>
       </div>
     </button>
   </a>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

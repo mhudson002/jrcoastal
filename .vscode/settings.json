@@ -1,2 +1,4 @@
 {
+    "html.hover.documentation": false,
+    "astro.updateImportsOnFileMove.enabled": false
 }

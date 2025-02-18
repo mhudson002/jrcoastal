@@ -1,9 +1,26 @@
 ---
 import { Image } from "astro:assets";
 import signature from "../assets/signature.png";
-import jessie from "../assets/jessie.png"
+import jessie from "../assets/JessieWSig.png"
 ---
-<footer class="footer bg-base-200 p-10 flex flex-col">
+
+<footer class="footer bg-black p-10 border-base-300 md:flex flex-col">
+  <aside>
+      <Image src={jessie} alt="headshot"/>
+  </aside>
+  <p class="text-center">
+    Copyright © {new Date().getFullYear()} J+R Coastal Marketing. All rights reserved.
+    <br />
+    Made by J+R Coastal Marketing
+  </p>
+</footer>
+
+
+
+
+
+
+<!-- <footer class="footer bg-base-200 p-10 flex flex-col">
   <aside>
     <div class="mask mask-circle relative">
       <Image src={jessie} alt="headshot"/>
@@ -18,7 +35,7 @@ import jessie from "../assets/jessie.png"
     <br />
     Made by J+R Coastal Marketing
   </p>
-</footer>
+</footer> -->
 
 
 
