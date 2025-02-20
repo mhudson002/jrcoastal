@@ -1,7 +1,4 @@
-html, body {
-	margin: 0;
-	padding: 0;
-  }
+
 
   @font-face {
     font-family: 'MoonTime';
@@ -10,85 +7,54 @@ html, body {
     font-style: normal;
   } 
 
-.abs-center {
-	margin: auto;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-  }
-
-
-.text {
-	margin: auto;
-	position: absolute;
-	top: -320px;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 150px;
-}
-
-p{
-	text-align: center;
-	font-size: 20px;
-	position: relative;
-	margin-top: 150px;
-	overflow-wrap: normal;
-}
-
-h2, h3 {
-	position: relative;
-	font-size: 85px;
-	padding-left: 30px;
-	padding-top: 50px;
-	height: 60px;
-	width: auto;
-	font-weight: 400;  
-  }
-
-h3 {
-	padding-top: 100px;
-	text-align: center;
-}
-
-.rw-words{
-	display: inline;
-}
-
-.rw-words-1 span i {
+/* .rw-words-1 span i {
   	font-size: 135px;
+} */
+
+@media screen and (max-width: 900px){
+	.rw-words-1 div i {
+		/* font-size: 2px; */
+  	}
+	.rw-words-1 div {
+		font-family: "moontime";
+		/* margin-top: -30px; */
+		/* opacity: 1; */
+		/* position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: rotateWord 15s linear 0s; */
+	}
+
 }
 
-.rw-words-1 span{
+.rw-words-1 div{
 	font-family: "moontime";
-	font-size: 145px;
-	margin-top: -30px;
-	opacity: 1;
-	position: absolute;
-	margin-left: 20px;
-	padding-left: 7px;
-	overflow: hidden;
-	animation: rotateWord 15s linear 0s;
+	/* font-size: 145px; */
+	/* margin-top: -30px; */
+	/* opacity: 1; */
+	/* position: absolute; */
+	/* margin-left: 20px;
+	padding-left: 7px; */
+	/* animation: rotateWord 15s linear 0s; */
 }
 
-.rw-words-1 span:nth-child(2) { 
+/* .rw-words-1 div:nth-child(2) { 
 	opacity: 0;
 	animation-delay: 2s; 
 }
-.rw-words-1 span:nth-child(3) { 
+.rw-words-1 div:nth-child(3) { 
 	opacity: 0;
 	animation-delay: 4s; 
 }
-.rw-words-1 span:nth-child(4) { 
+.rw-words-1 div:nth-child(4) { 
 	opacity: 0;
 	animation-delay: 6s; 
 }
-.rw-words-1 span:nth-child(5) { 
+.rw-words-1 div:nth-child(5) { 
 	opacity: 0;
 	animation-delay: 8s;
-}
+} */
 
 
 @keyframes rotateWord {
@@ -104,13 +70,12 @@ h3 {
 .btn-one {
 	line-height: 50px;
 	font-size: 30px;
-	height: 50px;
+	/* height: 50px; */
 	text-align: center;
-	width: auto;
 	cursor: pointer;
 	background: transparent;
 	border: none;
-	margin-top: 500px;
+	/* margin-top: 500px; */
 }
 
 .btn-one {
