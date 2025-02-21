@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         moontime: ['MoonTime', 'cursive'],
+        clarissa: ['Clarissa', 'serif'],
+        okinawa: ['Okinawa', 'script'],
       },
     },
   },

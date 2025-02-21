@@ -1,6 +1,5 @@
 ---
 import "./hero.css";
-import header from "../assets/header.jpg"
 
 ---
 
@@ -10,8 +9,8 @@ import header from "../assets/header.jpg"
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content flex-col text-neutral-content">
     <div class="md:grid md:grid-cols-2 md:place-items-center md:mt-11">
-      <div class="text-5xl text-nowrap md:mt-6"><h1>It's time to</h1></div>
-        <div class="rw-words-1 text-8xl md:text-9xl md:[31px] md:mt-6">
+      <div class="text-5xl text-center mt-10 text-nowrap md:mt-6"><h1>It's time to</h1></div>
+        <div class="rw-words-1 text-center text-8xl md:text-9xl md:[31px] md:mt-6">
           <div>elevate</div>
         <!-- <div>elevate</div>
         <div>transform</div>
@@ -26,30 +25,12 @@ import header from "../assets/header.jpg"
       discipline, creativity, and collaboration to every campaign—working side
       by side with you to achieve remarkable results.
       </p>
-      <button class="btn btn-one" onclick="my_modal_3.showModal()">Let's Grow Together</button>
+      <button class="btn btn-one" onclick="heroContact.showModal()">Let's Grow Together</button>
   </div>
 </div>
 
-<dialog id="my_modal_3" class="modal">
-  <div class="modal-box flex flex-col items-center gap-2">
+<dialog id="heroContact" class="modal">
+  <div class="modal-box">
     
-    <form method="dialog">
-      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-      <label class="form-control w-full max-w-xs">
-      <label class="input input-bordered flex items-center gap-2">
-        <input type="text" class="grow" placeholder="Name" />
-      </label>
-      <label class="input input-bordered flex items-center gap-2">
-        <input type="text" class="grow" placeholder="Email" />
-      </label>
-      <label class="input input-bordered flex items-center gap-2">
-        <input type="text" class="grow" placeholder="Phone Number" />
-      </label>
-      <label class="input input-bordered input-lg flex items-center gap-2">
-        <input type="text" class="grow" placeholder="Message" />
-      </label>
-    </label>
-  </form>
-  <button class="btn">Send</button>
-    </div>
+  </div>
 </dialog>
