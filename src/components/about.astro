@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+
+import jessie from "@assets/JessieWSig.png";
+---
+<div class="font-okinawa text-neutral-content">
+    <h1 class="text-3xl text-center text-nowrap tracking-tight scale-y-150 text-[#5ebbc3] md:text-5xl">
+    Expertise Meets Passion
+    </h1>
+</div>
+
+<div class="flex flex-col justify-evenly md:flex-row">
+    <div>
+        <Image src={jessie} alt="jessie"/>
+    </div>
+    <div>
+        <p class="text-pretty text-center text-xs/6 p-5 md:max-w-xl md:text-base">
+            Founded by Marine Corps veteran Jessie, 
+            our digital marketing agency is all about strategy, 
+            creativity, and a little unstoppable energy. 
+            We mix precision with personality to craft 
+            standout brands, engaging content, and marketing 
+            strategies that actually work. 
+            Whether it’s eye-catching web design, 
+            social media that sparks conversations, 
+            or campaigns that turn clicks into customers, 
+            we bring passion and purpose to everything we do. </br>
+            Ready to make some marketing magic?
+        </p>
+    </div>
+</div>
