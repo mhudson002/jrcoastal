@@ -8,3 +8,17 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Clarissa';
+    src: url('/fonts/Clarissa.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Okinawa';
+    src: url('/fonts/Okinawa.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
