@@ -4,17 +4,18 @@ import { Image } from "astro:assets";
 import jessie from "@assets/JessieWSig.png";
 ---
 <div class="font-okinawa text-neutral-content">
-    <h1 class="text-3xl text-center text-nowrap tracking-tight scale-y-150 text-[#5ebbc3] md:text-5xl">
+    <h1 class="text-3xl tracking-tight text-center mt-7 scale-y-150 text-[#5ebbc3] md:text-5xl md:mt-4">
     Expertise Meets Passion
     </h1>
 </div>
 
-<div class="flex flex-col justify-evenly md:flex-row">
-    <div>
+<div class="flex flex-col justify-center max-w-full md:flex-row">
+    <div class="mt-4 ml-10 md:float-left">
         <Image src={jessie} alt="jessie"/>
     </div>
-    <div>
-        <p class="text-pretty text-center text-xs/6 p-5 md:max-w-xl md:text-base">
+    <div class="mt-3 max-w-md md:mt-8">
+        <h1 class="text-center text-md md:text-xl">What is J+R Coastal Marketing?</h1>
+        <p class="text-pretty text-center text-xs/6 p-5 md:max-w-xl md:text-base/4">
             Founded by Marine Corps veteran Jessie, 
             our digital marketing agency is all about strategy, 
             creativity, and a little unstoppable energy. 
