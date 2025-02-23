@@ -87,7 +87,6 @@ html {
       height: 100%;
       width: 100%;
       display: grid;
-      place-items: center;
       border-radius: 10px;
   }
   
@@ -98,15 +97,22 @@ html {
       left: 0;
       background: #13616d;
       transform: rotateY(180deg);
+      align-items: center;
+      justify-content: center;
   }
   .back p {
       text-align: center;
       font-family: arial;
       line-height: 1.5em;
-      margin: 0;
-      padding: 0 25px;
       color: #d7dde4;
       vertical-align: middle;
+      margin: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .back p{
+      font-size: large;
+    }
   }
   
   .img {
@@ -114,21 +120,6 @@ html {
   }
   
   .button {
-      border: 1px solid white;
-      border-radius: 10px;
-      background: none;
-      color: white;
-      font-size: 1rem;
-      font-weight: lighter;
-      padding: .15rem .5rem;
-      transition-duration: 0.25s;
-      cursor: pointer;
-  }
-  
-  .button:hover,
-  .button:focus {
-      background: transparent;
-      color: cornflowerblue;
-      box-shadow: 0 5px 20px -5px navy;
+    margin-bottom: 0;
   }
 
